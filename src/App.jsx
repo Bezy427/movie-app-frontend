@@ -1,7 +1,7 @@
 ﻿import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Search from "./components/Search.js";
+import Search from "./components/Search.jsx";
 import Spinner from "./components/Spinner.jsx";
 import MovieCard from "./components/MovieCard.jsx";
 import MoviePreview from "./components/MoviePreview.jsx";
