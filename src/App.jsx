@@ -5,6 +5,7 @@ import Search from "./components/Search.jsx";
 import Spinner from "./components/Spinner.jsx";
 import MovieCard from "./components/MovieCard.jsx";
 import MoviePreview from "./components/MoviePreview.jsx";
+import MovieDetails from "./components/MovieDetails.jsx";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 
@@ -133,6 +134,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/movie/:id" element={<MoviePreview />} />
+            <Route path="/movie/:id" element={<MovieDetails />} />
         </Routes>
     );
 }
