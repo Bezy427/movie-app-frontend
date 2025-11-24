@@ -4,7 +4,6 @@ const MovieDetails = () => {
     return (
         <div className="container mt-5">
             <div className="row">
-                <!-- Product Images -->
                 <div className="col-md-6 mb-4">
                     <img
                         src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080"
@@ -25,8 +24,6 @@ const MovieDetails = () => {
                             alt="Thumbnail 4" className="thumbnail rounded" onClick="changeImage(event, this.src)"/>
                     </div>
                 </div>
-
-                <!-- Product Details -->
                 <div className="col-md-6">
                     <h2 className="mb-3">Premium Wireless Headphones</h2>
                     <p className="text-muted mb-4">SKU: WH1000XM4</p>
@@ -80,15 +77,6 @@ const MovieDetails = () => {
                 </div>
             </div>
         </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function changeImage(event, src) {
-        document.getElementById('mainImage').src = src;
-        document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
-        event.target.classList.add('active');
-    }
-    </script>
-)
+    )
 }
 export default MovieDetails
