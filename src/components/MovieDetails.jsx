@@ -12,16 +12,16 @@ const MovieDetails = () => {
                         <img
                             src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080"
                             alt="Thumbnail 1" className="thumbnail rounded active"
-                            onClick="changeImage(event, this.src)"/>
+                        />
                         <img
                             src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080"
-                            alt="Thumbnail 2" className="thumbnail rounded" onClick="changeImage(event, this.src)"/>
+                            alt="Thumbnail 2" className="thumbnail rounded"/>
                         <img
                             src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080"
-                            alt="Thumbnail 3" className="thumbnail rounded" onClick="changeImage(event, this.src)"/>
+                            alt="Thumbnail 3" className="thumbnail rounded"/>
                         <img
                             src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080"
-                            alt="Thumbnail 4" className="thumbnail rounded" onClick="changeImage(event, this.src)"/>
+                            alt="Thumbnail 4" className="thumbnail rounded"/>
                     </div>
                 </div>
                 <div className="col-md-6">
@@ -46,7 +46,7 @@ const MovieDetails = () => {
                         <h5>Color:</h5>
                         <div className="btn-group" role="group" aria-label="Color selection">
                             <input type="radio" className="btn-check" name="color" id="black" autoComplete="off"
-                                   checked/>
+                                   />
                             <label className="btn btn-outline-dark" htmlFor="black">Black</label>
                             <input type="radio" className="btn-check" name="color" id="silver" autoComplete="off"/>
                             <label className="btn btn-outline-secondary" htmlFor="silver">Silver</label>
@@ -56,8 +56,7 @@ const MovieDetails = () => {
                     </div>
                     <div className="mb-4">
                         <label htmlFor="quantity" className="form-label">Quantity:</label>
-                        <input type="number" className="form-control" id="quantity" value="1" min="1"
-                               style="width: 80px;"/>
+                            <input type="number" className="form-control" id="quantity" /*style={"w80"}*//>
                     </div>
                     <button className="btn btn-primary btn-lg mb-3 me-2">
                         <i className="bi bi-cart-plus"></i> Add to Cart

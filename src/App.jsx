@@ -134,7 +134,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/movie/:id" element={<MoviePreview />} />
-            <Route path="/movie/:id" element={<MovieDetails />} />
+            <Route path="/movie-details" element={<MovieDetails />} />
         </Routes>
     );
 }
