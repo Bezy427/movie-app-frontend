@@ -4,7 +4,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #5b538a;
+  --color-primary: #5f086c;
 
   --color-light-100: #cecefb;
   --color-light-200: #a8b5db;
@@ -24,7 +24,7 @@
   body {
     font-family: "DM Sans", serif;
     font-optical-sizing: auto;
-    background: #645b9c;
+    background: #c3b6d1;
   }
 
   h1 {
@@ -159,19 +159,4 @@
   &::-webkit-scrollbar {
     display: none;
   }
-}
-.product-image {
-  max-height: 400px;
-  object-fit: cover;
-}
-.thumbnail {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-.thumbnail:hover, .thumbnail.active {
-  opacity: 1;
 }
