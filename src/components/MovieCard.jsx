@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const MovieCard = ({ movie: { title, movie, vote_average, poster_path, release_date, original_language} }) => {
     return (
         <div className="movie-card">
-            <Link  key={`/movie/${movie}`}/>
+            <Link  to={`/movie/${movie}`}/>
             <li className="movie-card cursor-pointer hover:scale-105 transition"></li>
             <img
                 src={poster_path ?
