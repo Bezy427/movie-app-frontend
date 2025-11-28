@@ -36,7 +36,7 @@ const MovieDetails = () => {
                     </div>
                 </div>
 
-    )
+    );
 }
 
-export default MovieDetails
+export default MovieDetails;
